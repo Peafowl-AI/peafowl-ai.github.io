@@ -1,0 +1,43 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ai-visualization {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ai-visualization.gif') no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.innovations {
+    padding: 2rem 0;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+.github-icon:hover {
+    transform: scale(1.2);
+}
