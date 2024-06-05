@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peafowl AI - Advancing AI Research</title>
@@ -21,12 +20,24 @@
             <h1 class="animate__animated animate__fadeIn animate__slower text-center">Advancing AI Research</h1>
             <p class="animate__animated animate__fadeIn animate__slow animate__delay-1s text-center">We built open-source AI models</p>
             <div class="scroll-down">
-                <a href="#projects"><i class="fas fa-chevron-down"></i></a>
+                <a href="#about-us"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </header>
     
     <main>
+        <section id="about-us" class="about-us">
+            <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center mb-4">About PeafowlAI</h2>
+                <p class="lead text-center">PeafowlAI is a non-profit research lab with the goal of democratizing AI and Machine Learning (ML), focusing particularly on underrepresented research areas. We believe in extending the reach of our research beyond STEM research, encompassing fields such as art and culture in the further term future.</p>
+                <h3 class="text-center mb-4"></h3>
+                    <p class="lead text-center">contact@peafowl-ai.org</p>
+                <div class="scroll-down">
+                    <a href="#projects"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="projects container">
             <h2 class="text-center mb-4">Our Projects</h2>
             <div class="row justify-content-center">
@@ -36,7 +47,7 @@
                             <h3 class="card-title">MyanmarGPT</h3>
                             <h5 class="card-text">Myanmar Generative Pretrained Transformer</h5>
                             <img src="MyanmarGPT_Logo.jpeg" alt="MyanmarGPT" class="project-image img-fluid rounded">
-                            <h6 class="mt-3">The very first and largest usable Generative Pretrained Transformer in Myanmar (Burmese) languge</h6>
+                            <h6 class="mt-3">The very first and largest usable Generative Pretrained Transformer in Myanmar (Burmese) language</h6>
                             <a href="https://github.com/MinSiThu/MyanmarGPT" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-3">View on GitHub</a>
                         </div>
                     </div>
@@ -47,27 +58,13 @@
     </main>
     
     <footer class="bg-dark text-white text-center py-3">
-        <p><strong>www.peafowl-ai.org</strong></p>
-        <p>Our goal is to bring more democratization in the field of artificial intelligence, espically in underpresented areas of research. <br>Our areas of focus include machine learning, natural language processing, and computer vision.</p>
         <a href="https://github.com/Peafowl-AI" target="_blank" rel="noopener noreferrer">
             <p>Our GitHub Repository</p>
         </a>
+        <p>&copy; 2024 Peafowl AI. All rights reserved.</p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const scrollDownLink = document.querySelector('.scroll-down a');
-            const projectsSection = document.getElementById('projects');
-
-            scrollDownLink.addEventListener('click', function(event) {
-                event.preventDefault();
-                projectsSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>

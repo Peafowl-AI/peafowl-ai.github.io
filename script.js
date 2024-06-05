@@ -1,11 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const scrollDownLink = document.querySelector('.scroll-down a');
-    const projectsSection = document.getElementById('projects');
+    const scrollDownLinks = document.querySelectorAll('.scroll-down a');
 
-    scrollDownLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        projectsSection.scrollIntoView({
-            behavior: 'smooth'
+    scrollDownLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         });
     });
 });

@@ -3,7 +3,7 @@ body {
     color: #fff;
 }
 
-.hero-section {
+.hero-section, .about-us {
     height: 100vh;
     display: flex;
     flex-direction: column;
